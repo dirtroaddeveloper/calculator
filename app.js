@@ -30,7 +30,6 @@ container.addEventListener("click", (e) => {
         data += "= ";
         data += result;
         
-        
     }else {
         nums.push(e.target.dataset.info)
         data += e.target.dataset.info;
