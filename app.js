@@ -7,6 +7,10 @@ let data = "";
 
 container.addEventListener("click", (e) => {
 
+    if(nums.length == 0 && data.length > 1) {
+        topDisplay.textContent = "";
+        data = "";
+    }
     if(e.target.dataset.info == "=") {
         let result = 0;
         if(nums[1] == "+") {
@@ -25,6 +29,7 @@ container.addEventListener("click", (e) => {
         }
         data += "= ";
         data += result;
+        
         
     }else {
         nums.push(e.target.dataset.info)
